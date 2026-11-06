@@ -21,12 +21,20 @@ const newsreader = Newsreader({
 const description =
   "You only pay us if your software bill goes down. Flowz reviews your stack, cuts the overlap, and renegotiates renewals. No savings, no fee.";
 
+const siteUrl = "https://www.flowz.dk";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: site.legalName,
   description,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: site.legalName,
     description,
+    url: siteUrl,
+    siteName: site.legalName,
     type: "website",
   },
 };
