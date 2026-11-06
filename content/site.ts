@@ -1,17 +1,19 @@
-// Replace this address before you send the site to leads.
-export const email = "hello@flowzconsulting.com";
+export const email = "info@flowz.dk";
 
 export const mailto = `mailto:${email}?subject=${encodeURIComponent("Software renewals")}`;
 
 export const site = {
   name: "Flowz",
   legalName: "Flowz Consulting",
+  registeredName: "flowz",
+  cvr: "45157229",
+  address: "Fridtjof Nansens Plads 2, 2100 Copenhagen",
   founded: 2024,
   email,
   mailto,
   nav: [
-    { label: "Services", href: "#services" },
-    { label: "How it works", href: "#how" },
+    { label: "Services", href: "/#services" },
+    { label: "How it works", href: "/#how" },
   ],
   hero: {
     eyebrow: "For companies about to renew their software",

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Newsreader } from "next/font/google";
 import type { ReactNode } from "react";
+import { CookieConsent } from "@/components/CookieConsent";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { site } from "@/content/site";
 import "./globals.css";
 
@@ -34,7 +37,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       lang="en"
       className={`${geistSans.variable} ${newsreader.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-background text-foreground">{children}</body>
+      <body className="min-h-full bg-background text-foreground">
+        <ScrollProgress />
+        {children}
+        <CookieConsent />
+        <GoogleAnalytics />
+      </body>
     </html>
   );
 }
