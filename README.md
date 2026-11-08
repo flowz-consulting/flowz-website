@@ -15,6 +15,18 @@ Open [http://localhost:3000](http://localhost:3000).
 
 All copy and the contact address live in [`content/site.ts`](content/site.ts). The address on the site is `info@flowz.dk`.
 
+## Savings review form
+
+The form posts a review request to a private Discord channel. It shows a success message only after Discord accepts the webhook. Until `DISCORD_WEBHOOK_URL` is set, the form shows an error and asks the visitor to email `info@flowz.dk`.
+
+Create the webhook in Discord: open the channel, then **Edit Channel → Integrations → Webhooks → New Webhook**, and copy the webhook URL. Add it in Vercel under **Settings → Environment Variables** for Production and Preview, and mark it Sensitive. It is server-only. Do not prefix it with `NEXT_PUBLIC_`.
+
+```
+DISCORD_WEBHOOK_URL=
+```
+
+The value must be an `https://discord.com/api/webhooks/...` URL, or the older `discordapp.com` host. A forum thread can use `?thread_id=` on that same URL. For local checks, put the same name in `.env.local` and restart `npm run dev`. See [`.env.example`](.env.example).
+
 ## Deploy on Vercel
 
 This repo is ready to import. Deploy from the Vercel dashboard when you want it live.
