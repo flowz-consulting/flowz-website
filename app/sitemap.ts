@@ -8,9 +8,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://www.flowz.dk/ai",
-      changeFrequency: "yearly",
-      priority: 0.4,
+      url: "https://www.flowz.dk/services",
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://www.flowz.dk/services/cost-optimisation",
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.flowz.dk/services/software-strategy",
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.flowz.dk/services/ai-strategy",
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.flowz.dk/services/workflow-automation",
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.flowz.dk/services/saas-management",
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     {
       url: "https://www.flowz.dk/privacy",

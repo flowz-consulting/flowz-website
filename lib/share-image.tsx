@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const shareSize = { width: 1200, height: 630 };
 
 export const shareAlt =
-  "Flowz. Stop overpaying for software. No upfront fee. 20% of verified first-year savings.";
+  "Flowz. Consultancy for how you run on software. Cost, software strategy, AI, automation, and governance.";
 
 export function createShareImage() {
   return new ImageResponse(
@@ -30,7 +30,7 @@ export function createShareImage() {
               color: "#146c43",
             }}
           >
-            Software procurement and renewal negotiation
+            Software consultancy
           </div>
           <div
             style={{
@@ -42,7 +42,7 @@ export function createShareImage() {
               maxWidth: 920,
             }}
           >
-            Stop overpaying for software.
+            Consultancy for how you run on software.
           </div>
         </div>
         <div
@@ -54,7 +54,7 @@ export function createShareImage() {
           }}
         >
           <div style={{ display: "flex", fontSize: 28, lineHeight: 1.35, color: "#5c5c5c", maxWidth: 760 }}>
-            No upfront fee · 20% of first-year savings · No savings, no fee
+            Cost · Software · AI · Automation · Governance
           </div>
           <div style={{ display: "flex", fontSize: 36 }}>Flowz</div>
         </div>

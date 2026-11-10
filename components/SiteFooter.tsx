@@ -21,10 +21,10 @@ export function SiteFooter() {
         </div>
         <div className="flex flex-wrap gap-x-5 gap-y-2">
           <Link
-            href="/ai"
+            href="/services"
             className="text-foreground underline underline-offset-4 hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           >
-            AI implementation
+            Services
           </Link>
           <Link
             href="/privacy"

@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { CookieConsent } from "@/components/CookieConsent";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { ScrollProgress } from "@/components/ScrollProgress";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { site, siteDescription, siteTitle, siteUrl } from "@/content/site";
 import "./globals.css";
 
@@ -76,6 +77,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           Skip to content
         </a>
         <ScrollProgress />
+        <ScrollToTop />
         {children}
         <CookieConsent />
         <GoogleAnalytics />

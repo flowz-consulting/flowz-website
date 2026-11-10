@@ -37,7 +37,7 @@ function discordBody(value: InquiryInput) {
     allowed_mentions: { parse: [] },
     embeds: [
       {
-        title: clip(`Software savings review: ${value.company}`, 256),
+        title: clip(`Inquiry: ${value.company}`, 256),
         description: clip(value.message, 4096),
         color: 0x146c43,
         fields: [

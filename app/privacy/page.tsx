@@ -39,10 +39,10 @@ export default function PrivacyPage() {
           </p>
           <section>
             <h2 className="font-serif text-2xl tracking-tight text-foreground">
-              The review form
+              The contact form
             </h2>
             <p className="mt-3">
-              If you request a savings review on this site, we collect your name, work email, and
+              If you write to us through the form on this site, we collect your name, work email, and
               company name. You can also tell us an approximate annual software spend, an
               approximate number of software vendors, when the next major renewal is, and a short
               message. We use that to reply and to suggest a next step. We do not ask for contracts
